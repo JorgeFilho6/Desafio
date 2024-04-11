@@ -3,29 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background: url(./assets_new/op_mob.jpg) no-repeat top center/cover;
+:root {
+  --fundo: url(./assets_new/op_mob.jpg);
+}
+body {
+  background: var(--fundo) no-repeat top center/cover;
   font-family: "Inter", sans-serif;
   color: white;
 }
-h1{
+h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-#p1{
-/*  border: 1px solid red;*/
+#p1 {
+  /*  border: 1px solid red;*/
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
-ul{
+ul {
   list-style: none;
   /*border: 1px solid red;*/
   margin: 5px;
 }
-li{
+li {
   /*border: 1px solid red;*/
   border-radius: 5px;
+}
+@media (min-width: 700px) {
+  :root {
+    --fundo: url(./assets_new/op_pc.jpg);
+  }
 }

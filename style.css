@@ -10,7 +10,6 @@
   --bg-url: url(./assets_new/op_mob.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
-  --switch-br-url: url(./assets_new/bomb_icon.png);
 }
 /*Oppenheimer: */
 .light {
@@ -18,7 +17,6 @@
   --bg-url: url(./assets_new/barbie2_mob.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
-  --switch-bg-url: url(./assets_new/b1_png.png);
 }
 /*Adicionando um plano de fundo ao blog: */
 body {
@@ -26,6 +24,7 @@ body {
   /*Atalho: 
   background: color image repeat position/size;
   */
+  height: 100vh;
 }
 /*Selecionando a fonte da página: */
 body * {
@@ -34,7 +33,8 @@ body * {
 }
 /*Configurações do container (onde estarão todos os elementos)*/
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -136,4 +136,13 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+/* Ajustando o blog para diferentes dispositivos */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets_new/op_pc.jpg);
+  }
+  .light {
+    --bg-url: url(./assets_new/barbie2_pc.jpg);
+  }
 }

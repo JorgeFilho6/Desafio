@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!---Caixa genérica: receberá o conteúdo do blog -->
+    <div id="container">
+      <!---Colocando a imagem de perfil: -->
+      <div id="profile">
+        <img
+          src="./assets_new/Avatar2.png"
+          alt="Foto de Jorge no obelisco de Buenos Aires a noite."
+        />
+        <p>Jorge Marinheiro
+          <br>Engenharia de Computação
+        </p>
+        <!---Criando os botões do menu do blog: -->
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button>
+        </button>
+        <span>
+        </span>
+      </div>
+      <ul>
+        <li>
+          <a href="./p1.html" target="_blank">Apresentação</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Post</a>
+        </li>
+      </ul>
+      <!--Adicionado os ícones sociais: -->
+      <div id="social-links">
+        <!--Adicione o link do github-->
+        <a href="#" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <!--Adicione o link do instagram-->
+        <a href="#" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+      <footer>Feito por Jorge para o PS da Include Engenharia</footer>
+    </div>
+    <!--Exportando os ícones dos links sociais: -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
